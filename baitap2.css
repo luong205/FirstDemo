@@ -1,0 +1,318 @@
+.head {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin-top: 15px;
+  position: sticky;
+  background-color: aqua;
+}
+.left {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.left div {
+  margin-right: 30px;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right div {
+  margin-right: 30px;
+}
+.right div button {
+  border: 1px solid black;
+  border-radius: 30px;
+  height: 50px;
+}
+.landingpage {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aquamarine; */
+}
+.note {
+  width: 50%;
+  padding-top: 100px;
+  margin-right: 50px;
+}
+.cre {
+  min-width: auto;
+  font-size: 13px;
+}
+.indam {
+  min-width: auto;
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.avec {
+  font-size: 28px;
+}
+.note button {
+  border-radius: 30px;
+  height: 45px;
+  width: 180px;
+  background-color: rgb(255, 224, 27);
+  margin-top: 20px;
+}
+.imgpage {
+  width: 100%;
+  background: url("https://eep.io/images/yzco4xsimv0y/433SRjV7TLAaSJqKyzNoAB/6c6e276dad767cc496fd213a37d53771/Frame_370604_FR.png?w=1520&q=70")
+    center no-repeat;
+  background-size: cover;
+}
+.votrepage {
+  width: 100%;
+  display: flex;
+  padding-top: 80px;
+  margin-bottom: 20px;
+}
+.ivt {
+  width: 54%;
+  background: url("https://eep.io/images/yzco4xsimv0y/6mrXRILreh2Vj81jEkfCt/80e768d9ba29eef02da7c61188f3c4b1/LandingPages-Desktop-02-Domain.png?w=640&q=70")
+    center no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+.wvt {
+  width: 67%;
+}
+.wvt h1 {
+  display: block;
+  justify-content: center;
+  margin-left: 120px;
+  font-size: 43px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.com {
+  display: block;
+  justify-content: center;
+  margin-left: 100px;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.btn:hover {
+  box-shadow: 20px 20px black;
+  transition: all 0.3s;
+}
+.des {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+.wdes {
+  width: 54%;
+  display: block;
+  justify-content: center;
+  padding-top: 310px;
+}
+.wdes h1 {
+  font-size: 34px;
+  padding-bottom: 25px;
+}
+.wdes div {
+  line-height: 3;
+  font-size: 18px;
+}
+.wdes div div {
+  border-bottom: 1px solid black;
+}
+.ides {
+  width: 67%;
+  background: url(ảnh/desmodeles.avif) center no-repeat;
+  background-size: cover;
+}
+
+.part2 {
+  padding-top: 80px;
+  background-color: whitesmoke;
+}
+.head2 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: Means Web, Georgia, Times, Times New Roman, serif;
+  padding-bottom: 80px;
+}
+.row {
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  height: 750px;
+  border: 1px solid black;
+}
+.row1 {
+  width: 25%;
+  position: relative;
+  border-left: 1px solid black;
+}
+.child1 {
+  position: absolute;
+  top: 35px;
+  bottom: 24px;
+  left: 30px;
+  right: 40px;
+}
+.row2 {
+  width: 25%;
+  position: relative;
+  border-left: 1px solid black;
+}
+.child2 {
+  position: absolute;
+  top: 35px;
+  bottom: 24px;
+  left: 30px;
+  right: 40px;
+}
+.row3 {
+  width: 25%;
+  position: relative;
+  border-left: 1px solid black;
+}
+.child3 {
+  position: absolute;
+  top: 35px;
+  bottom: 24px;
+  left: 30px;
+  right: 40px;
+}
+.row4 {
+  width: 25%;
+  position: relative;
+  border-left: 1px solid black;
+}
+.child4 {
+  position: absolute;
+  top: 35px;
+  bottom: 24px;
+  left: 30px;
+  right: 40px;
+}
+.concept {
+  height: 60px;
+}
+.mois {
+  height: 35px;
+  padding-top: 30px;
+}
+.detal {
+  padding-top: 20px;
+}
+.detal li {
+  border-bottom: 1px solid black;
+  line-height: 3.5;
+}
+.epart2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bp2 {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+.bp2 button {
+  border-radius: 30px;
+  background-color: rgb(255, 224, 27);
+  padding: 20px 40px;
+}
+.part3 {
+  position: relative;
+  padding-top: 50px;
+}
+.con {
+  position: absolute;
+  left: 100px;
+  right: 100px;
+}
+.fashion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.wfs {
+  width: 60%;
+  padding-top: 20px;
+  padding-right: 120px;
+}
+.imgfs1 {
+  width: 34%;
+  background: url(ảnh/imgfs1.avif) no-repeat center;
+  background-size: cover;
+  height: 261px;
+}
+.imgfs2 {
+  width: 34%;
+  background: url(ảnh/imgfs2.avif) no-repeat center;
+  background-size: cover;
+  height: 261px;
+}
+.imgfs3 {
+  width: 34%;
+  background: url(ảnh/imgfs3.avif) no-repeat center;
+  background-size: cover;
+  height: 261px;
+}
+.imgfs4 {
+  width: 34%;
+  background: url(ảnh/imgfs4.avif) no-repeat center;
+  background-size: cover;
+  height: 261px;
+}
+.imgfs5 {
+  width: 34%;
+  background: url(ảnh/imgfs5.avif) no-repeat center;
+  background-size: cover;
+  height: 261px;
+}
+.hfs {
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 1.5;
+}
+.notefs {
+  font-size: 20px;
+  padding-top: 30px;
+  line-height: 2;
+}
+.faq {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.hfaq {
+  width: 30%;
+  font-size: 40px;
+  font-weight: 900;
+}
+.qtfaq {
+  width: 70%;
+  line-height: 2;
+}
+.qtfaq div {
+  font-size: 24px;
+  border-top: 1px solid black;
+  padding: 24px 0px;
+}
+.part4 {
+  background-color: darkgoldenrod;
+}

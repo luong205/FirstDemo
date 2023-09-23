@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("shouldApplyCSAMBlock",["I64","gkx"],(function(a,b,c,d,e,f,g){"use strict";function a(a){if(!c("gkx")("7048")||a==null)return!1;switch(d("I64").to_int32(a.enforcements)){case 1:case 8192:case 4096:case 512:case 256:case 2048:case 1024:return!0}return!1}g["default"]=a}),98);

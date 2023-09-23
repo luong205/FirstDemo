@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anydask</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* background-color: aqua; */
+        border-bottom: 1px solid black;
+      }
+      /* .left ul {
+        display: flex;
+        list-style: none;
+      } */
+      .left{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+      }
+      .left  img {
+        width: 80px;
+        height: 55px;
+      }
+      .right ul {
+        display: flex;
+        list-style: none;
+      }
+      .right ul li {
+        margin-right: 10px;
+      }
+      .right ul li:hover {
+        background-color: darkgray;
+      }
+      .input {
+        width: 100%;
+        margin: 5px 0;
+      }
+      .input div {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+      .input input {
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+        text-transform: capitalize;
+        padding-right: 60px;
+      }
+      .input input:focus {
+        outline: none;
+      }
+      .space {
+        width: 90%;
+      }
+      .space ul {
+        display: flex;
+      }
+      .space ul li {
+        margin-left: 5px;
+      }
+      .setting {
+        width: 10%;
+      }
+      .setting ul {
+        display: flex;
+        list-style: none;
+        justify-content: end;
+      }
+      .setting ul li {
+        margin-right: 10px;
+      }
+      .header {
+        background-color: red;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+      }
+      .youraddress {
+        display: flex;
+        justify-content: center;
+      }
+      .youraddress i {
+        margin-top: 20px;
+      }
+      .toolbar {
+        display: flex;
+        justify-content: space-between;
+      }
+      .menu ul {
+        display: flex;
+      }
+      .menu ul li {
+        list-style: none;
+        margin-right: 20px;
+        font-size: 18px;
+      }
+      .menu ul li:hover {
+        border: 1px solid;
+        background-color: antiquewhite;
+      }
+      .view i {
+        margin: 20px 10px;
+      }
+      .new {
+        border-bottom: 1px solid black;
+        font-size: 18px;
+        margin-left: 10px;
+      }
+      .content {
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+        gap: 10px;
+        flex-flow: wrap;
+      }
+      .content1 {
+        width: 20%;
+        min-width: 170px;
+        border: 1px solid black;
+        background-color: red;
+        color: white;
+        border-radius: 2px;
+        word-wrap: break-word;
+      }
+      .content1 p {
+        margin-left: 10px;
+      }
+      .content2 {
+        width: 20%;
+        min-width: 170px;
+        border: 1px solid grey;
+        border-radius: 2px;
+        word-wrap: break-word;
+      }
+      .content2 p {
+        margin-left: 10px;
+      }
+      .content3 {
+        width: 20%;
+        min-width: 170px;
+        border: 1px solid grey;
+        border-radius: 2px;
+        background-color: dodgerblue;
+        word-wrap: break-word;
+      }
+      .content3 p {
+        margin-left: 10px;
+      }
+      .content4 {
+        width: 40%;
+        min-width: 340px;
+        border: 1px solid grey;
+        background-color: grey;
+        border-radius: 2px;
+        word-wrap: break-word;
+      }
+      .content4 p {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <div class="left">
+            <img
+              src="data:image/png;base64,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"
+              alt="logo"
+            />
+          <span><i class="fa-solid fa-desktop"></i> New Session</span>
+          <span>
+            <i class="fa-solid fa-desktop"></i>
+          </span>
+        </ul>
+      </div>
+      <div class="right">
+        <ul>
+          <li><i class="fa-regular fa-circle-user"></i></li>
+          <li>-</li>
+          <li><i class="fa-regular fa-window-restore"></i></li>
+          <li><i class="fa-solid fa-xmark"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="input" >
+      <!-- <div class="space"> -->
+      <div style="position: relative; background-color: red;">
+        <i class="fa-solid fa-circle-check"></i>
+        <input type="text" placeholder="enter remove address" />
+        <div style="position: absolute; top: 13px; right: 42px;">
+          <i class="fa-solid fa-circle-arrow-right"></i>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+       <div>
+        <i class="fa-solid fa-bars"></i>
+      </div> 
+       </div>
+       <div class="setting">
+        <ul>
+          <li><i class="fa-solid fa-circle-arrow-right"></i></li>
+          <li><i class="fa-solid fa-arrow-right"></i></li>
+          <li><i class="fa-solid fa-bars"></i></li>
+        </ul>
+      </div> 
+    </div> 
+    <div class="header" style="position: relative;">
+      Free license (non-professional use). <ins>Start trial license</ins> or
+      <ins>buy</ins>
+    </div>
+    <div class="youraddress">
+      Your Address <span style="font-size: 50px; color: red">1 728 470 565</span
+      ><i style="margin-right: 10px" class="fa-solid fa-circle-info"></i>
+      <i class="fa-solid fa-unlock-keyhole"></i>
+    </div>
+    <div class="toolbar">
+      <div class="menu">
+        <ul>
+          <li style="color: red">News</li>
+          <li>Favorites</li>
+          <li>recent sessions</li>
+          <li>Discevered</li>
+          <li>invitations</li>
+        </ul>
+      </div>
+      <div class="view">
+        <i class="fa-solid fa-grip-vertical"></i>
+        <i class="fa-solid fa-list"></i>
+      </div>
+    </div>
+    <div class="new">new</div>
+    <div class="content">
+      <div class="content1">
+        <p><b>What's new in AnyDesk 7.1 ?</b></p>
+        <p>check out the mode interesting new features in this release</p>
+        <p><ins>learn more -></ins></p>
+      </div>
+      <div class="content2">
+        <p><b>Anydesk Status</b></p>
+        <p>Your Anydesk version is up to date</p>
+      </div>
+      <div class="content3">
+        <p><b>Discovery</b></p>
+        <p>Find other Anydesk clients in your local nework automatically</p>
+        <p><ins>close</ins></p>
+      </div>
+      <div class="content4">
+        <p><b>help us improve</b></p>
+        <p>
+          with your permission, we would like to collect clients, divice and
+          network data to provided the most convernient user experience.
+        </p>
+        <p><ins>allow data collection</ins></p>
+      </div>
+    </div>
+<div style="background-color: yellow; padding: 10px; margin-bottom: 10px; 
+margin-top: 10px;
+outline: solid 5px green;
+border: solid 2px blue;">
+  Conal
+</div>
+      <div style="background-color: blue;">
+        Conal
+          </div>
+  </body>
+</html>
